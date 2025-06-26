@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     },
     {
         path: "manager",
-        element: <LayoutDashboard />mn 
+        element: <LayoutDashboard />
     }
 ]);
 
