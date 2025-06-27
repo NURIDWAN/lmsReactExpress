@@ -1,80 +1,84 @@
-``
+import logo from '../../assets/images/logos/logo.svg';
+import dcubewhite from '../../assets/images/icons/3dcube-white.svg';
+import noteFavoritePurple from '../../assets/images/icons/note-favorite-purple.svg';
+import crownWhite from '../../assets/images/icons/crown-white.svg';
+import profile2userWhite from '../../assets/images/icons/profile-2user-white.svg';
+import securityCardWhite from '../../assets/images/icons/security-card-white.svg';
+import cupWhite from '../../assets/images/icons/cup-white.svg';
+import setting2White from '../../assets/images/icons/setting-2-white.svg';
+import sidebarGlow from '../../assets/images/backgrounds/sidebar-glow.png';
+import crownPurple from '../../assets/images/icons/crown-purple.svg';
+import th1 from '../../assets/images/thumbnails/th-1.png';
+import th2 from '../../assets/images/thumbnails/th-2.png';
+import th3 from '../../assets/images/thumbnails/th-3.png';
 
 function Cources() {
     return (
         <>
-            <aside className="sidebar-container fixed h-[calc(100vh-20px)] w-full max-w-[280px] my-[10px] ml-[10px] bg-[#060A23] overflow-hidden flex flex-1 rounded-[20px]">
-                <div className="flex w-full overflow-y-scroll scroll-container hide-scrollbar">
-                    <nav className="flex flex-col w-full h-fit p-[30px] gap-10 z-10">
-                        <a href="index.html">
-                            <img src={logo} alt="logo" />
-                        </a>
-                        <ul className="flex flex-col gap-4">
-                            <p className="font-semibold text-xs leading-[18px] text-white">GENERAL</p>
-                            <li>
-                                <a href="index.html">
-                                    <div className="flex items-center gap-3 w-full rounded-full border p-[14px_20px] transition-all duration-300 hover:bg-[#662FFF] hover:border-[#8661EE] hover:shadow-[-10px_-6px_10px_0_#7F33FF_inset] bg-[#662FFF] border-[#8661EE] shadow-[-10px_-6px_10px_0_#7F33FF_inset]">
-                                        <img src={dcubewhite} className="w-6 h-6" alt="icon" />
-                                        <span className="font-semibold text-white">Overview</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="manage-course.html">
-                                    <div className="flex items-center gap-3 w-full rounded-full border p-[14px_20px] transition-all duration-300 hover:bg-[#662FFF] hover:border-[#8661EE] hover:shadow-[-10px_-6px_10px_0_#7F33FF_inset] bg-[#070B24] border-[#24283E] shadow-[-10px_-6px_10px_0_#181A35_inset]">
-                                        <img src={noteFavoritePurple} className="w-6 h-6" alt="icon" />
-                                        <span className="font-semibold text-white">Courses</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div className="flex items-center gap-3 w-full rounded-full border p-[14px_20px] transition-all duration-300 hover:bg-[#662FFF] hover:border-[#8661EE] hover:shadow-[-10px_-6px_10px_0_#7F33FF_inset] bg-[#070B24] border-[#24283E] shadow-[-10px_-6px_10px_0_#181A35_inset]">
-                                        <img src={crownWhite} className="w-6 h-6" alt="icon" />
-                                        <span className="font-semibold text-white">Categories</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="manage-student.html">
-                                    <div className="flex items-center gap-3 w-full rounded-full border p-[14px_20px] transition-all duration-300 hover:bg-[#662FFF] hover:border-[#8661EE] hover:shadow-[-10px_-6px_10px_0_#7F33FF_inset] bg-[#070B24] border-[#24283E] shadow-[-10px_-6px_10px_0_#181A35_inset]">
-                                        <img src={profile2userWhite} className="w-6 h-6" alt="icon" />
-                                        <span className="font-semibold text-white">Students</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul className="flex flex-col gap-4">
-                            <p className="font-semibold text-xs leading-[18px] text-white">OTHERS</p>
-                            <li>
-                                <a href="#">
-                                    <div className="flex items-center gap-3 w-full rounded-full border p-[14px_20px] transition-all duration-300 hover:bg-[#662FFF] hover:border-[#8661EE] hover:shadow-[-10px_-6px_10px_0_#7F33FF_inset] bg-[#070B24] border-[#24283E] shadow-[-10px_-6px_10px_0_#181A35_inset]">
-                                        <img src={securityCardWhite} className="w-6 h-6" alt="icon" />
-                                        <span className="font-semibold text-white">Subscription</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div className="flex items-center gap-3 w-full rounded-full border p-[14px_20px] transition-all duration-300 hover:bg-[#662FFF] hover:border-[#8661EE] hover:shadow-[-10px_-6px_10px_0_#7F33FF_inset] bg-[#070B24] border-[#24283E] shadow-[-10px_-6px_10px_0_#181A35_inset]">
-                                        <img src={cupWhite} className="w-6 h-6" alt="icon" />
-                                        <span className="font-semibold text-white">Rewards</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div className="flex items-center gap-3 w-full rounded-full border p-[14px_20px] transition-all duration-300 hover:bg-[#662FFF] hover:border-[#8661EE] hover:shadow-[-10px_-6px_10px_0_#7F33FF_inset] bg-[#070B24] border-[#24283E] shadow-[-10px_-6px_10px_0_#181A35_inset]">
-                                        <img src={setting2White} className="w-6 h-6" alt="icon" />
-                                        <span className="font-semibold text-white">Settings</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            <section id="LatestCourse" className="flex flex-col rounded-[30px] p-[30px] gap-[30px] bg-[#F8FAFB]">
+                <h2 className="font-extrabold text-[22px] leading-[33px]">Latest Courses</h2>
+                {/* Repeatable Course Card */}
+                <div className="flex items-center gap-5 card">
+                    <div className="flex shrink-0 w-[100px] h-20 rounded-[20px] bg-[#D9D9D9] overflow-hidden">
+                        <img src={th1} className="object-cover w-full h-full" alt="thumbnail" />
+                    </div>
+                    <div className="w-full">
+                        <a href="manage-course-materi.html" className="font-bold text-xl leading-[30px] line-clamp-1">Responsive Design Triclorem Lorem, ipsum dolor.</a>
+                        <div className="flex items-center gap-[6px] mt-[6px]">
+                            <img src={crownPurple} alt="icon" />
+                            <p className="text-[#838C9D]">Programming</p>
+                        </div>
+                    </div>
                 </div>
-                <img src="assets/images/backgrounds/sidebar-glow.png" className="absolute bottom-0 object-contain object-bottom" alt="background" />
-            </aside>
+                <div className="flex items-center gap-5 card">
+                    <div className="flex shrink-0 w-[100px] h-20 rounded-[20px] bg-[#D9D9D9] overflow-hidden">
+                        <img src={th2} className="object-cover w-full h-full" alt="thumbnail" />
+                    </div>
+                    <div className="w-full">
+                        <a href="manage-course-materi.html" className="font-bold text-xl leading-[30px] line-clamp-1">HTMX JavaScript 2020</a>
+                        <div className="flex items-center gap-[6px] mt-[6px]">
+                            <img src={crownPurple} alt="icon" />
+                            <p className="text-[#838C9D]">Marketing</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex items-center gap-5 card">
+                    <div className="flex shrink-0 w-[100px] h-20 rounded-[20px] bg-[#D9D9D9] overflow-hidden">
+                        <img src={th3} className="object-cover w-full h-full" alt="thumbnail" />
+                    </div>
+                    <div className="w-full">
+                        <a href="manage-course-materi.html" className="font-bold text-xl leading-[30px] line-clamp-1">Mastering React</a>
+                        <div className="flex items-center gap-[6px] mt-[6px]">
+                            <img src={crownPurple} alt="icon" />
+                            <p className="text-[#838C9D]">Data Science</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex items-center gap-5 card">
+                    <div className="flex shrink-0 w-[100px] h-20 rounded-[20px] bg-[#D9D9D9] overflow-hidden">
+                        <img src={th2} className="object-cover w-full h-full" alt="thumbnail" />
+                    </div>
+                    <div className="w-full">
+                        <a href="manage-course-materi.html" className="font-bold text-xl leading-[30px] line-clamp-1">Responsive Design Triclorem Lorem, ipsum dolor.</a>
+                        <div className="flex items-center gap-[6px] mt-[6px]">
+                            <img src={crownPurple} alt="icon" />
+                            <p className="text-[#838C9D]">Marketing</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex items-center gap-5 card">
+                    <div className="flex shrink-0 w-[100px] h-20 rounded-[20px] bg-[#D9D9D9] overflow-hidden">
+                        <img src={th3} className="object-cover w-full h-full" alt="thumbnail" />
+                    </div>
+                    <div className="w-full">
+                        <a href="manage-course-materi.html" className="font-bold text-xl leading-[30px] line-clamp-1">Company Profile Multilorem Lorem, ipsum dolor.</a>
+                        <div className="flex items-center gap-[6px] mt-[6px]">
+                            <img src={crownPurple} alt="icon" />
+                            <p className="text-[#838C9D]">Data Science</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
