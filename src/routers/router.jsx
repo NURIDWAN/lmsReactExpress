@@ -24,7 +24,13 @@ const router = createBrowserRouter([
     },
     {
         path: "manager",
-        element: <LayoutDashboard />
+        element: <LayoutDashboard />,
+        children: [
+            {
+                index: true,
+                element: <ManagerHome />
+            }
+        ]
     }
 ]);
 
